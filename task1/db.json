@@ -1,0 +1,18 @@
+{
+  "passwordManager": [
+    {
+      "categoryName": "test",
+      "appName": "Gmail account",
+      "email": "admin@email.com",
+      "password": "U2FsdGVkX19ZZYjwL4D2AJZ3zysEQAhzvOo06TvJ8l0=",
+      "id": "2550"
+    },
+    {
+      "categoryName": "sss",
+      "appName": "sss",
+      "email": "ss",
+      "password": "U2FsdGVkX1+2Y/DEvRqS7xQI1C1ImvQPrjaC72zyfCE=",
+      "id": "b1e8"
+    }
+  ]
+}
