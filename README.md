@@ -1,8 +1,6 @@
 # Password manager:
 
 Create a simple personal password manager tool.
-
-## Task 1:
 ### Frontend Application
 Techstack:
 - TypeScript
