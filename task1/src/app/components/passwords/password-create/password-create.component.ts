@@ -20,6 +20,7 @@ export class PasswordCreateComponent {
   email = '';
   appName = '';
   categoryName = '';
+  isPasswordVisible = false;
 
   onAddButtonClick(): void {
     this.toggleModal.emit();
@@ -69,5 +70,10 @@ export class PasswordCreateComponent {
     this.appName = '';
     this.email = '';
     this.password = '';
+    this.isPasswordVisible = false;
+  }
+
+  togglePasswordVisibility(): void {
+    this.isPasswordVisible = !this.isPasswordVisible;
   }
 }

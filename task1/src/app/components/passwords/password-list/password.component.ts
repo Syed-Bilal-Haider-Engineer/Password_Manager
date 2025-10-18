@@ -17,6 +17,7 @@ export class PasswordComponent implements OnInit {
   isToggle = signal(false);
   passwordService = inject(PasswordService);
   passwordList = signal<Array<Password>>([]);
+  visiblePasswords = signal<Set<number>>(new Set());
 
   constructor() {
     effect(() => {
@@ -55,5 +56,31 @@ export class PasswordComponent implements OnInit {
         this.fetchPassword();
       });
     }
+  }
+
+  public copyToClipboard(text: string): void {
+    navigator.clipboard.writeText(text).then(() => {
+      // You could add a toast notification here
+      console.log('Copied to clipboard:', text);
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  }
+
+  public togglePasswordVisibility(index: number): void {
+    const currentVisible = this.visiblePasswords();
+    const newVisible = new Set(currentVisible);
+    
+    if (newVisible.has(index)) {
+      newVisible.delete(index);
+    } else {
+      newVisible.add(index);
+    }
+    
+    this.visiblePasswords.set(newVisible);
+  }
+
+  public isPasswordVisible(index: number): boolean {
+    return this.visiblePasswords().has(index);
   }
 }

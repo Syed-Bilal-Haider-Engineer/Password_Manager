@@ -1,7 +1,21 @@
 <div class="password-header">
-    <header>
-      <h2>Passwords</h2>
-      <button class="add-button" (click)="onAddButtonClick()">Add</button>
-    </header>
-  </div>
+  <header class="header-container">
+    <div class="header-content">
+      <div class="header-title">
+        <div class="title-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h1 class="title">Password Manager</h1>
+      </div>
+      <button class="btn btn-primary add-button" (click)="onAddButtonClick()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Add Password
+      </button>
+    </div>
+  </header>
+</div>
   
