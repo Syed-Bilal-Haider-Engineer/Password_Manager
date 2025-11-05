@@ -1,6 +1,6 @@
 # Password manager:
 
-Create a simple personal password manager tool.
+Developed a simple Personal Password Manager Tool to securely store personal passwords locally, without relying on third-party services like Google Password Manager. I built this project mainly due to security and privacy concerns, as I prefer to keep full control over my sensitive data. Additionally, this project reflects my Angular coding style and development practices, demonstrating how I structure components, manage state, and implement secure data handling. It serves both as a practical utility and a showcase of my frontend development skills in building privacy-focused web applications.
 ### Frontend Application
 Techstack:
 - TypeScript
